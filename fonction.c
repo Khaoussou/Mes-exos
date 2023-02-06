@@ -102,3 +102,19 @@ int nbr_ami(int nbr1,int nbr2)
 
         return 0;
 }
+
+void espace(char phrase[])
+{
+   // char phrase1 [chaine(phrase)];
+  //  int j=0;
+   
+    int i=0;
+
+    while(phrase[0] == ' ')
+    {
+        for( i=0 ; phrase[i] != '\0' ; i++)
+        {
+            phrase[i]=phrase[i+1];
+        }
+    }
+}
