@@ -2,14 +2,6 @@
 #include<stdlib.h>
 #include"khaoussou.h"
 #include"Projet8.h"
-/*void num_valide (char ch)
-{
-    initial(ch);
-    caractere(ch);
-    nbr_chiffre(ch);
-    espace(ch);
-}*/
-
 
 /*int tri_affichage(float devoir,float projet,float exam)
 {
@@ -33,16 +25,26 @@ struct Personne
     
 };
 
-int chaine(char ch[])
+int num_valide (char ch[])
 {
-    int i,l;
-    l=0;
-        for(i=0; ch[i] != '\0' ; i++)
+    espace(ch);
+
+        if (initial(ch) && caractere(ch) && nbr_chiffre(ch))
         {
-            l=l+1;
-        }
-        
-        return l;
+            return 1;
+        } 
+
+    return 0;
+}
+
+char numero(char telephone[])
+{
+    while (!(num_valide(telephone)))
+    {
+        printf("\nDonner le telephone: ");
+        scanf("%s",telephone);
+    }
+    
 }
 
 void conversion(char note [])
@@ -67,11 +69,12 @@ float control_saisi(char note [])
     }
 }
 
-int main()
+void afficche (char tableau [] )
 {
     int i ;
     float som , p , e , d ;
-    etudiants tab[2];
+    etudiants tab[2] ;
+    FILE * fichier = fopen("fichier.txt","a");
 
     printf("Donner les informations des 5 etudiants de la classe");
 
@@ -82,6 +85,9 @@ int main()
             scanf("%s",tab[i].nom);
             printf("\nDonner le prenom: ");
             scanf("%s",tab[i].prenom);
+            printf("\nDonner le telephone: ");
+            scanf("%s",tab[i].telephone);
+            numero(tab[i].telephone);
             printf("\nDonner la classe: ");
             scanf("%s",tab[i].classe);
             printf("\nDonner la note de devoir: ");
@@ -99,22 +105,28 @@ int main()
 
             som = d + p + e ;
             tab[i].moy = som / 3 ;
-
-            //printf("\nDonner le telephone: ");
-            //scanf("%s",tab[i].telephone);
+            fprintf(fichier, "%s-%s-%s-%s-%s-%s-%s-%.2f\n",tab[i].nom,tab[i].prenom,tab[i].telephone,tab[i].classe,tab[i].devoir,tab[i].projet,tab[i].exam,tab[i].moy);
         }
-
-        printf("\nVoici la liste des etudiants:");
+        fclose(fichier);
+        printf("\nVoici la liste des etudiants:\n");
         
-        printf("\nNom\t\tPrenom\t\tClasse\t\tDevoir\t\tProjet\t\tExam\t\tMoyenne");
+        printf("_________________________________________________________________________________________________________________________");
+        printf("\n\nNom\t\t|Prenom\t\t|telephone\t|Classe\t\t|Devoir\t\t|Projet\t\t|Exam\t\t|Moyenne|");
+        // printf("\n\n\t\t|\t\t|\t\t|\t\t|\t\t|\t\t|\t\t|\t\t|");
+        printf("\n_________________________________________________________________________________________________________________________\n");
         for( i = 0; i < 2 ; i ++ )
         {
-            
-            printf("\n%-10s\t %-10s\t %-10s\t %-10s\t %-10s\t %-10s\t %.2f\t",
+
+            printf("\n%-10s\t | %-10s\t | %s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %.2f |",
                 
-                tab[i].nom, tab[i].prenom, tab[i].classe, tab[i].devoir, tab[i].projet, tab[i].exam, tab[i].moy);
+                tab[i].nom, tab[i].prenom, tab[i].telephone, tab[i].classe, tab[i].devoir, tab[i].projet, tab[i].exam, tab[i].moy);
+            printf("\n_________________________________________________________________________________________________________________________\n");
         }
-        
-    return 0;
+}
+int main()
+{
+    char tab [2] ;
+
+    afficche(tab) ;
 }
 

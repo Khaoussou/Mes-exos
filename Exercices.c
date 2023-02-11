@@ -23,26 +23,28 @@ int main()
             printf("\nVoici le traitement de l'exercice 4:\n");
             
             printf("\nVoici l'exercice\n");
-            traitement();
+          //  traitement();
                
             break;
 
 
         case 5:
             printf("\nVoici le traitement de l'exercice 5:\n");
-            void Matrice();
+            Matrice();
 
             break;
 
 
         case 6:
             printf("\nVoici le traitement de l'exercice 6:\n");
+            Matrice();
 
             break;
 
 
         case 7:
             printf("\nVoici le traitement de l'exercice 7:\n");
+            Affiche();
 
             break;
 

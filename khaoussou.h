@@ -5,7 +5,7 @@ int chaine(char ch[]);
 void espace(char phrase[]);
 
 //La suppression du nombre d'espace en milieu
-char espace_milieu(char phrase[]);
+//char espace_milieu(char phrase[]);
 
 // Verfication d'une lettre majuscule
 int majuscule(char phrase[]);
@@ -27,3 +27,7 @@ void traitement();
 
 //Pour  la matrice
 void Matrice();
+
+// Pour le nombre de carctere
+int caractere(char numb[]);
+

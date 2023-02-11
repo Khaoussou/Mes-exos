@@ -46,23 +46,24 @@ int caractere(char numb[])
 
         for(int i = 0 ; numb[i] != '\0' ; i++)
         {
-            if( numb[i] != '0' && numb[i] != '9')
+            if ( ! ( numb[i] >= '0' && numb[i] <= '9'))
             {
                 return 0;
             }
 
         }
+
      return 1;
         
 }
 
 int nbr_chiffre(char numb[])
 {
-    if( chaine(numb) == 9 )
-    {
-        return 1;
-    }
-    return 0;
+        if( chaine(numb) == 9 )
+        {
+            return 1;
+        }
+        return 0;
 }
 
 void ennonce()
@@ -99,8 +100,7 @@ void traitement()
         d=i;
         while ( numero[i] == '_')
         {
-            
-           // retirer(val,numero,d,f);
+            espace(numero);
 
             if( initial(val) && caractere(val) && nbr_chiffre(val))
             {
@@ -113,7 +113,6 @@ void traitement()
         }
                 printf("%d\n",i);
         
-
     }   
 
 }
