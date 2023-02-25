@@ -1,0 +1,85 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 50%;
+	display: grid;
+	padding: 1px;
+	margin: auto;
+	background-color: black;
+	grid-template-columns: repeat(30,50px);
+	grid-template-rows: repeat(6,50px);
+	gap: 10px;
+	text-align: center;
+	color: white;
+	justify-content: center;
+}
+.container > div 
+{
+	grid-column: span 2;
+	border-radius: 5px;
+	box-shadow: 0.2rem 0.2rem 1rem gray;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.container > div:nth-child(2)
+{
+	grid-column: span 24 ;
+}
+.container > div:nth-child(18)
+{
+	grid-column: span 4;
+	background-color: darkred;
+}
+.container > div:nth-child(19)
+{
+	grid-column: span 3;
+	background-color: darkred;
+}
+.container > div:nth-child(32)
+{
+	grid-column: span 3;
+}
+.container > div:nth-child(33)
+{
+	grid-column: span 4;
+	background-color: darkred;
+}
+.container > div:nth-child(45)
+{
+	grid-column: span 4;
+	background-color: darkred;
+}
+.container > div:nth-child(46)
+{
+	grid-column: span 5;
+	background-color: darkred;
+}
+.container > div:nth-child(57)
+{
+	grid-column: span 5;
+	background-color: darkred;
+}
+.container > div:nth-child(61)
+{
+	background-color: darkred;
+}
+.container > div:nth-child(62)
+{
+	grid-column: span 10;
+	background-color: darkred;
+}
+.container > div:nth-child(63)
+{
+	background-color: darkred;
+}
+
+

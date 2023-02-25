@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+.container
+{
+    border: 5px solid black;
+    min-height: 50vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: normal;
+    align-content: space-around;
+}
+.container > div:nth-child(1)
+{
+    justify-content: space-around;
+    border: 3px solid red;
+    flex-basis: 15%;
+    width: 75vw;
+    flex-wrap: nowrap;
+}
+.container > div:nth-child(1) > div:nth-child(1)
+{
+    display: flex;
+    justify-content: space-evenly;
+    block-size: 40%;
+}
+.container > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+{
+    justify-content: flex-start;
+    justify-content: space-between;
+    border: 3px solid red;
+    flex-basis: 10%;
+    block-size: 93px;
+}
+.container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
+{
+   justify-content: space-between;
+   border: 3px solid red;
+   width: 0%;
+   flex-basis: 50%;
+   margin: 5px;
+   block-size: 95;
+   display: flex;
+}
+.container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) 
+{
+   margin-top: 10px;
+   border: 2px solid red;
+ 
+   flex-basis: 27%;
+   margin: 3px;
+}
+.container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
+{
+    margin-left: 6%;
+   margin-top: 10px;
+   border: 2px solid red;
+   flex-basis: 27%;
+   margin: 3px;
+}
+.container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)
+{
+   margin-top: 10px;
+   border: 2px solid red;
+   flex-basis: 27%;
+   margin: 3px;
+}
+.container > div:nth-child(1) > div:nth-child(2)
+{
+    justify-content: flex-start;
+    margin-left: 2%;
+    border: 3px solid red;
+    flex-basis: 50%;
+    margin: 5px;
+    block-size: 95px;
+}
+.container > div:nth-child(2)
+{
+    border: 4px solid green;
+    min-height: 60vh;
+    margin: 1%;
+    width: 75vw;
+}
+.container > div:nth-child(2) > div:nth-child(1)
+{
+    margin-top: 0.5%;
+    margin-left: 2%;
+    border: 1px solid orange;
+    width: 96%;
+    flex-basis: 20%;
+}
+.container > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
+{
+    display: flex;
+    flex-basis: 40%;
+}
+.container > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+{
+    margin-top: 1%;
+    margin-left: 10%;
+    border: 1px solid orange;
+    width: 50rem;
+    block-size: 10rem;
+}
+.container > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
+{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 20%;
+    border: 1px solid orange;
+    width: 60rem;
+    flex-basis: 70%;
+}
+.container > div:nth-child(2) > div:nth-child(1) > div:nth-child(2)
+{
+    border: 1px solid orange;
+    flex-basis: 88%;
+    width: 88%;
+    margin: 14px;
+    block-size: 10rem;
+}
+.container > div:nth-child(2) > div:nth-child(2)
+{
+    border: 1px solid magenta;
+    flex-basis: 78%;
+    width: 98%;
+    margin: 9px;
+    block-size: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+    flex-basis: 100%;
+    width: 100%;
+    margin: 25px;
+    block-size: 10rem;
+    display: flex;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)  > div:nth-child(1)
+{
+    border: 1px solid violet;
+    flex-basis: 100%;
+    width: 47%;
+    margin: 25px;
+    block-size: 7rem;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)  > div:nth-child(2)
+{
+    border: 1px solid violet;
+    flex-basis: 100%;
+    width: 47%;
+    margin: 25px;
+    block-size: 7rem;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)
+{
+    border: 1px solid violet;
+    flex-basis: 100%;
+    width: 48%;
+    margin: 25px;
+    block-size: 7rem;
+    display: flex;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+    border: 1px solid violet;
+    flex-basis: 48%;
+    width: 48%;
+    margin: 25px;
+    block-size: 4rem;
+    display: flex;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)
+{
+    border: 1px solid violet;
+    flex-basis: 48%;
+    width: 48%;
+    margin: 25px;
+    block-size: 60%;
+    display: flex;
+}
+.container > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3)
+{
+    border: 1px solid violet;
+    flex-basis: 48%;
+    width: 48%;
+    margin: 25px;
+    block-size: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > div:nth-child(2) > div:nth-child(3)
+{
+    border: 1px solid blueviolet;
+    flex-basis: 100%;
+    width: 97%;
+    margin: 25px;
+    block-size: 80%;
+    display: flex;
+      
+}
+.container > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+{
+    border: 1px solid blueviolet;
+    flex-basis: 20%;
+    width: 80%;
+    margin: 25px;
+    block-size: 250px;
+    display: flex;
+    
+}
+.container > div:nth-child(2) > div:nth-child(3) > div:nth-child(2)
+{
+   margin-top: 0.5%;
+   margin-left: 6%;
+   width: 45%;
+   flex-basis: 80%;
+}
+.container > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1)
+{
+    margin-top: 1%;
+    margin-left: 2%;
+    border: 1px solid blueviolet;
+    width: 95%;
+    flex-basis: 90%;
+    block-size: 88px;
+ }
+ .container > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2)
+ {
+    display: flex;
+ }
+ .container > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+ {
+    margin-left: 2%;
+    margin: 16px;
+    border: 1px solid blueviolet;
+    width: 35%;
+    flex-basis: 90%;
+    block-size: 88px;
+ }
+ .container > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)
+ {
+    margin: 16px;
+    border: 1px solid blueviolet;
+    width: 35%;
+    flex-basis: 90%;
+    block-size: 88px;
+ }
+.container > div:nth-child(3)
+{
+    border: 4px solid blue;
+    block-size: 10rem;
+    margin: 1%;
+    display: flex;
+    width: 75vw;
+    justify-content: space-between;
+}
+.container > div:nth-child(3) > div:nth-child(1)
+{
+    display: flex;
+    justify-content: space-evenly;
+    block-size: 60%;
+}
+.container > div:nth-child(3) > div:nth-child(1) > div:nth-child(1)
+{
+    justify-content: flex-start;
+    margin-top: 10;
+    margin-left: 20%;
+    border: 1px solid blue;
+    width: 80vw;
+    flex-basis: 10%;
+    margin: 5px;
+    block-size: 93px;
+}
+.container > div:nth-child(3) > div:nth-child(1) > div:nth-child(2)
+{
+   justify-content: space-between;
+   border: 1px solid blue;
+   width: 20%;
+   flex-basis: 50%;
+   margin: 5px;
+   block-size: 95;
+   display: flex;
+}
+.container > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) 
+{
+   margin-left: 6%;
+   margin-top: 10px;
+   border: 1px solid blue;
+   width: 25%;
+   flex-basis: 27%;
+   margin: 3px;
+}
+.container > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
+{
+    margin-left: 6%;
+    margin-top: 10px;
+    border: 1px solid blue;
+    width: 25%;
+    flex-basis: 27%;
+    margin: 3px;
+}
+.container > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)
+{
+    margin-left: 6%;
+    margin-top: 30px;
+    border: 1px solid blue;
+    width: 25%;
+    flex-basis: 27%;
+    margin: 3px;
+}

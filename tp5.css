@@ -1,0 +1,132 @@
+*
+{
+	margin: 0;
+	padding: 0;	
+}
+body
+{
+	--variable-color : darkorange;
+	--taille-police : 3rem;
+	--police : "Poppins";
+	--police1 : "Poppins:500";
+	--var-color : white;
+}
+.contenaire > div:nth-child(1)
+{
+	position: relative;
+	display: flex;
+	
+}
+.contenaire > div:nth-child(1) > div:nth-child(1)
+{
+	background-image: url(Logo.png); 
+	width: 15%; 
+	margin-left: 5%;
+	block-size: 10rem; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(1) > div:nth-child(2)
+{
+	margin-top: 4%;
+	position: absolute;
+	right: 10%;
+	display: flex;
+	right: 0;
+	font-size: var(--taille-police);
+	font-family: var(--police);
+}
+.contenaire > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+	color: var(--variable-color);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1)
+{
+	position: relative;
+	background-image: url(baniere.jpeg); 
+	background-color: black;
+	width: 100%; 
+	margin-top: 2%;
+	block-size: 40rem; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--var-color);
+
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
+{
+	margin-top: -5%;
+	font-size: 2rem;
+	font-family: Poppins;
+	font-weight: bold;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2)
+{
+	font-size: var(--taille-police);
+	font-family: var(--police);
+	font-weight: bold;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(3)
+{
+	font-size: var(--taille-police);
+	font-family: var(--police);
+	font-weight: bold;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(4)
+{
+	font-size: 2rem;
+	font-family: var(--police);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(5)
+{
+	display: flex;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1)
+{
+	margin-top: 10%;
+	border-radius: 25px;
+	font-family: var(--police);
+	background-color: tomato;
+	font-size: var(--taille-police);
+
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > div:nth-child(2)
+{
+	margin-top: 10%;
+	border-radius: 25px white;
+	font-weight: bold;
+	font-family: var(--police);
+	font-size: var(--taille-police);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > div:nth-child(2):hover
+{
+	color: tomato;
+}
+.contenaire > div:nth-child(2) > div:nth-child(2)
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.contenaire > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+	position: absolute;
+	background-image: url(2telephones.png); 
+	top: 0;
+	width: 40%; 
+	block-size: 80rem; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	
+}
+
+

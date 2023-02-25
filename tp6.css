@@ -1,0 +1,309 @@
+*
+{
+	margin: 0;
+	padding: 0;	
+}
+body
+{
+	--variable-color : #f73a00;
+	--taille-police1 : 3rem;
+	--taille-police2 : 5rem;
+	--police : "Poppins";
+	--police1 :'Roboto',sans-serif;
+	--var-color : white;
+	--gras : bold;
+	--transparence : rgba(0,0,0,0.5);
+}
+.contenaire
+{
+	display: grid;
+	grid-template-rows: 10rem 78rem 60rem 60rem 10rem; 
+	gap: 1rem;
+}
+.contenaire > div:nth-child(1),.contenaire > div:nth-child(5) > div:nth-child(1)
+{
+	position: relative;
+	display: flex;
+}
+.contenaire > div:nth-child(1) > div:nth-child(1),.contenaire > div:nth-child(5) > div:nth-child(1) > div:nth-child(1)
+{
+	background-image: url(Logo.png); 
+	width: 15%; 
+	margin-left: 5%;
+	block-size: 10rem; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(1) > div:nth-child(2)
+{
+	margin-top: 3%;
+	position: absolute;
+	right: 10%;
+	display: flex;
+	right: 0;
+	font-size: var(--taille-police1);
+	font-family: var(--police);
+}
+.contenaire > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+	color: var(--variable-color);
+}
+.contenaire > div:nth-child(2)
+{
+	position: relative;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1)
+{
+	position: relative;
+	block-size: 40rem;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
+{
+	position: relative;
+	background-image: url(baniere.jpeg); 
+	width: 100%; 
+	margin-top: 2%;
+	block-size: 100%; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2)
+{
+	top: 0;
+	width: 100%;
+	block-size: 100%; 
+	position: absolute;
+	background-color: var(--transparence);
+	bottom: 0;
+	color: var(--var-color);
+}
+/*.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+	position: relative;
+	block-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}*/
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
+{
+	position: relative;
+	block-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+{
+	font-size: 2rem;
+	font-family: var(--police);
+	font-weight: var(--gras);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
+{
+	margin-top: 2%;
+	font-size: var(--taille-police1);
+	font-family: var(--police);
+	font-weight: var(--gras);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3)
+{
+	font-size: var(--taille-police1);
+	font-family: var(--police);
+	font-weight: var(--gras);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4)
+{
+	margin-top: 2%;
+	font-size: 2rem;
+	font-family: var(--police);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2)
+{
+	margin-top: -12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+	margin-top: 15%;
+	border-radius: 2rem;
+	color: var(--var-color);
+	font-family: var(--police1);
+	background-color: var(--variable-color);
+	font-size: var(--taille-police1);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)
+{
+	margin-top: 15%;
+	border-radius: 2rem;
+	border-color: var(--var-color);
+	font-weight: var(--gras);
+	background-color: var(--transparence);
+	font-family: var(--police1);
+	font-size: var(--taille-police1);
+}
+.contenaire > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3):hover
+{
+	color: var(--variable-color);
+}
+.contenaire > div:nth-child(2) > div:nth-child(2)
+{
+	position: relative;
+	top: -20%;
+	left: 25%;
+	width: 50%;
+	block-size: 50%; 
+}
+.contenaire > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+	background-image: url(2telephones.png); 
+	width: 70%; 
+	block-size: 120%; 
+	background-size: 100%; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(2) > div:nth-child(3)
+{
+	margin-left: 17%; 
+	margin-top: -5%;
+	border-radius: 2rem;
+	background-color: lightgray; 
+	width: 50%; 
+	width: 60%;
+	block-size: 0.2%;
+}
+.contenaire > div:nth-child(3)
+{
+	display: flex;
+	flex-direction: column;
+	position:relative;
+	align-items: center;
+}
+.contenaire > div:nth-child(3) > div:nth-child(1)
+{
+	font-family: var(--police);
+	font-size: var(--taille-police1);
+}
+.contenaire > div:nth-child(3) > div:nth-child(2)
+{
+	display: flex;
+	block-size: 100%;
+	width: 100%;
+}
+.contenaire > div:nth-child(3) > div:nth-child(2) > div:nth-child(1)
+{
+	margin-left: 8%;
+	background-image: url(RectangleImg2.png);
+	width: 40%;
+	block-size: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.contenaire > div:nth-child(3) > div:nth-child(2) > div:nth-child(2)
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contenaire > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),.contenaire > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+	margin-top: -5%;
+	color: var(--variable-color);
+	font-family: var(--police1);
+	font-size: var(--taille-police1);
+}
+.contenaire > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),.contenaire > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3),.contenaire > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2),.contenaire > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3)
+{
+	margin-top: 2%;
+	font-family: var(--police1);
+	font-size: var(--taille-police1);
+	font-weight: var(--gras);
+}
+.contenaire > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4),.contenaire > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4)
+{
+	font-family: var(--police2);
+	margin-top: 3%;
+	font-size: var(--taille-police);
+}
+.contenaire > div:nth-child(4)
+{
+	position:relative;
+}
+.contenaire > div:nth-child(4) > div:nth-child(1)
+{
+	display: flex;
+	block-size: 100%;
+	width: 100%;
+}
+.contenaire > div:nth-child(4) > div:nth-child(1) > div:nth-child(1)
+{
+	margin-left: 13%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contenaire > div:nth-child(4) > div:nth-child(1) > div:nth-child(2)
+{
+	margin-left: 13%;
+	background-image: url(RectangleImg3.png);
+	width: 40%;
+	block-size: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.contenaire > div:nth-child(5) > div:nth-child(1) > div:nth-child(2)
+{
+	display: flex;
+	width: 90%;
+	align-items: space-between;
+}
+.contenaire > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+	background-image: url(Vector1.png);
+	width: 5%; 
+	margin-top: 4%;
+	margin-left: 20%;
+	block-size: 40%;
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
+{
+	background-image: url(Vector.png);
+	width: 5%; 
+	margin-top: 4%;
+	margin-left: 10%;
+	block-size: 40%;
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)
+{
+	background-image: url(instagramicone.png);
+	width: 5%; 
+	margin-top: 4%;
+	margin-left: 10%;
+	block-size: 40%;
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+.contenaire > div:nth-child(5) > div:nth-child(1) > div:nth-child(3)
+{
+	margin-top: 4%;
+	position: absolute;
+	right: 0;
+	left: 80%;
+	font-family: var(--police1);
+}
